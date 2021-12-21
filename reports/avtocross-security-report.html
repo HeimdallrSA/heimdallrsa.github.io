@@ -132,7 +132,7 @@
 		<h3 id="Overview">Overview</h3>
 		<h4>Project Summary</h4>
 		<p>
-			<table>
+			<table class="nowrap">
 				<tr>
 					<td>
 						<b>Project Name:</b>
@@ -168,7 +168,7 @@
 
 		<h4>Audit Summary</h4>
 		<p>
-			<table>
+			<table class="nowrap">
 				<tr>
 					<td>
 						<b>Start Date:</b>
@@ -186,7 +186,7 @@
 
 		<h4>Vulnerability & Bug Findings Summary</h4>
 		<p>
-			<table>
+			<table class="nowrap colorized">
 				<thead>
 					<tr>
 						<td>Assessment Component</td>
@@ -199,20 +199,20 @@
 				</thead>
 				<tbody>
 					<tr>
-						<td>Front/Backend / UI Findings</td>
+						<td><b>Front/Backend / UI Findings</b></td>
 						<td>3</td>
 						<td>7</td>
 						<td>3</td>
 						<td>2</td>
-						<td>Average</td>
+						<td class="green">Average</td>
 					</tr>
 					<tr>
-						<td>Smart Contract Findings</td>
+						<td><b>Smart Contract Findings</b></td>
 						<td>0</td>
 						<td>1</td>
 						<td>0</td>
 						<td>8</td>
-						<td>Average</td>
+						<td class="green">Average</td>
 					</tr>
 				</tbody>
 			</table>
@@ -255,7 +255,7 @@
 			<li>
 				<b>SwapFlashLoan.sol</b>
 				<ul>
-					<li>Derived contract from Swap.sol to extend it with FlashLoan functionality. It allows users to borrow the specified token from this pool for this transaction only. This function will call `IFlashLoanReceiver(receiver).executeOperation` and the `receiver` must return the full amount of the token and the associated fee by the end of the callback transaction. If the conditions are not met, this call is reverted.</li>
+					<li>Derived contract from Swap.sol to extend it with FlashLoan functionality. It allows users to borrow the specified token from this pool for this transaction only. This function will call <code>IFlashLoanReceiver(receiver).executeOperation</code> and the <code>receiver</code> must return the full amount of the token and the associated fee by the end of the callback transaction. If the conditions are not met, this call is reverted.</li>
 				</ul>
 			</li>
 		</ol>
@@ -269,22 +269,22 @@
 
 		<p>
 			<span><b>Finding 1:</b> The amounts of assets rates are displayed as "0" on the confirm modal window on the add liquidity page.</span>
-			<table>
+			<table class="colorized">
 				<tr>
 					<td><b>Root Cause</b></td>
-					<td>Configuration Management</td>
+					<td class="green center-wide">Configuration Management</td>
 				</tr>
 				<tr>
 					<td><b>CVSS</b></td>
-					<td>1.0</td>
+					<td class="blue center-wide">1.0</td>
 				</tr>
 				<tr>
 					<td><b>Severity</b></td>
-					<td>Medium</td>
+					<td class="beige center-wide">Medium</td>
 				</tr>
 				<tr>
 					<td><b>Mitigation</b></td>
-					<td>Moderate</td>
+					<td class="beige center-wide">Moderate</td>
 				</tr>
 			</table>
 		</p>
@@ -298,22 +298,22 @@
 		<hr>
 		<p>
 			<span><b>Finding 2:</b> The notifications of pending transactions are shown on the site after the transaction has come.</span>
-			<table>
+			<table class="colorized">
 				<tr>
 					<td><b>Root Cause</b></td>
-					<td>Configuration Management</td>
+					<td class="green center-wide">Configuration Management</td>
 				</tr>
 				<tr>
 					<td><b>CVSS</b></td>
-					<td>1.0</td>
+					<td class="blue center-wide">1.0</td>
 				</tr>
 				<tr>
 					<td><b>Severity</b></td>
-					<td>Medium</td>
+					<td class="beige center-wide">Medium</td>
 				</tr>
 				<tr>
 					<td><b>Mitigation</b></td>
-					<td>Moderate</td>
+					<td class="beige center-wide">Moderate</td>
 				</tr>
 			</table>
 		</p>
@@ -327,22 +327,22 @@
 		<hr>
 		<p>
 			<span><b>Finding 3:</b> The balance of the user deposit is displayed as "0.0" on the "Pools" page if the user has an amount less than 1$.</span>
-			<table>
+			<table class="colorized">
 				<tr>
 					<td><b>Root Cause</b></td>
-					<td>Configuration Management</td>
+					<td class="green center-wide">Configuration Management</td>
 				</tr>
 				<tr>
 					<td><b>CVSS</b></td>
-					<td>1.0</td>
+					<td class="blue center-wide">1.0</td>
 				</tr>
 				<tr>
 					<td><b>Severity</b></td>
-					<td>High</td>
+					<td class="red center-wide">High</td>
 				</tr>
 				<tr>
 					<td><b>Mitigation</b></td>
-					<td>Moderate</td>
+					<td class="beige center-wide">Moderate</td>
 				</tr>
 			</table>
 		</p>
@@ -356,22 +356,22 @@
 		<hr>
 		<p>
 			<span><b>Finding 4:</b> The transactions of add liquidity with 2 or 3 approves are not confirmed correctly (The metamask wallet looks frozen).</span>
-			<table>
+			<table class="colorized">
 				<tr>
 					<td><b>Root Cause</b></td>
-					<td>Configuration Management</td>
+					<td class="green center-wide">Configuration Management</td>
 				</tr>
 				<tr>
 					<td><b>CVSS</b></td>
-					<td>1.0</td>
+					<td class="blue center-wide">1.0</td>
 				</tr>
 				<tr>
 					<td><b>Severity</b></td>
-					<td>Medium</td>
+					<td class="beige center-wide">Medium</td>
 				</tr>
 				<tr>
 					<td><b>Mitigation</b></td>
-					<td>Moderate</td>
+					<td class="beige center-wide">Moderate</td>
 				</tr>
 			</table>
 		</p>
@@ -385,22 +385,22 @@
 		<hr>
 		<p>
 			<span><b>Finding 5:</b> The user can enter an amount with more than 18 decimals on the "Swap" page.</span>
-			<table>
+			<table class="colorized">
 				<tr>
 					<td><b>Root Cause</b></td>
-					<td>Configuration Management</td>
+					<td class="green center-wide">Configuration Management</td>
 				</tr>
 				<tr>
 					<td><b>CVSS</b></td>
-					<td>1.0</td>
+					<td class="blue center-wide">1.0</td>
 				</tr>
 				<tr>
 					<td><b>Severity</b></td>
-					<td>Low</td>
+					<td class="yellow center-wide">Low</td>
 				</tr>
 				<tr>
 					<td><b>Mitigation</b></td>
-					<td>Low</td>
+					<td class="yellow center-wide">Low</td>
 				</tr>
 			</table>
 		</p>
@@ -414,22 +414,22 @@
 		<hr>
 		<p>
 			<span><b>Finding 6:</b> The tab names of the pop-up window of wallet connection are not visible if the tab is active.</span>
-			<table>
+			<table class="colorized">
 				<tr>
 					<td><b>Root Cause</b></td>
-					<td>Configuration Management</td>
+					<td class="green center-wide">Configuration Management</td>
 				</tr>
 				<tr>
 					<td><b>CVSS</b></td>
-					<td>1.0</td>
+					<td class="blue center-wide">1.0</td>
 				</tr>
 				<tr>
 					<td><b>Severity</b></td>
-					<td>Informational</td>
+					<td class="blue center-wide">Informational</td>
 				</tr>
 				<tr>
 					<td><b>Mitigation</b></td>
-					<td>Minimal</td>
+					<td class="blue center-wide">Minimal</td>
 				</tr>
 			</table>
 		</p>
@@ -443,22 +443,22 @@
 		<hr>
 		<p>
 			<span><b>Finding 7:</b> The https://ethereum.org/en/wallets/ site is opened after clicking the "Get a wallet!" link on the pop-up window of wallet connection.</span>
-			<table>
+			<table class="colorized">
 				<tr>
 					<td><b>Root Cause</b></td>
-					<td>Configuration Management</td>
+					<td class="green center-wide">Configuration Management</td>
 				</tr>
 				<tr>
 					<td><b>CVSS</b></td>
-					<td>1.0</td>
+					<td class="blue center-wide">1.0</td>
 				</tr>
 				<tr>
 					<td><b>Severity</b></td>
-					<td>Low</td>
+					<td class="yellow center-wide">Low</td>
 				</tr>
 				<tr>
 					<td><b>Mitigation</b></td>
-					<td>Low</td>
+					<td class="yellow center-wide">Low</td>
 				</tr>
 			</table>
 		</p>
@@ -472,22 +472,22 @@
 		<hr>
 		<p>
 			<span><b>Finding 8:</b> The balance of assets chosen in the "To" dropdown list is clickable on the "Swap" page.</span>
-			<table>
+			<table class="colorized">
 				<tr>
 					<td><b>Root Cause</b></td>
-					<td>Configuration Management</td>
+					<td class="green center-wide">Configuration Management</td>
 				</tr>
 				<tr>
 					<td><b>CVSS</b></td>
-					<td>1.0</td>
+					<td class="blue center-wide">1.0</td>
 				</tr>
 				<tr>
 					<td><b>Severity</b></td>
-					<td>Informational</td>
+					<td class="blue center-wide">Informational</td>
 				</tr>
 				<tr>
 					<td><b>Mitigation</b></td>
-					<td>Minimal</td>
+					<td class="blue center-wide">Minimal</td>
 				</tr>
 			</table>
 		</p>
@@ -501,22 +501,22 @@
 		<hr>
 		<p>
 			<span><b>Finding 9:</b> Delete autofocus on the "Swap" screen on the mobile devices after opening the asset dropdown lists.</span>
-			<table>
+			<table class="colorized">
 				<tr>
 					<td><b>Root Cause</b></td>
-					<td>Configuration Management</td>
+					<td class="green center-wide">Configuration Management</td>
 				</tr>
 				<tr>
 					<td><b>CVSS</b></td>
-					<td>1.0</td>
+					<td class="blue center-wide">1.0</td>
 				</tr>
 				<tr>
 					<td><b>Severity</b></td>
-					<td>Medium</td>
+					<td class="beige center-wide">Medium</td>
 				</tr>
 				<tr>
 					<td><b>Mitigation</b></td>
-					<td>Moderate</td>
+					<td class="beige center-wide">Moderate</td>
 				</tr>
 			</table>
 		</p>
@@ -530,22 +530,22 @@
 		<hr>
 		<p>
 			<span><b>Finding 10:</b> The text in the Coinbase connect modal window is shifted right.</span>
-			<table>
+			<table class="colorized">
 				<tr>
 					<td><b>Root Cause</b></td>
-					<td>Configuration Management</td>
+					<td class="green center-wide">Configuration Management</td>
 				</tr>
 				<tr>
 					<td><b>CVSS</b></td>
-					<td>1.0</td>
+					<td class="blue center-wide">1.0</td>
 				</tr>
 				<tr>
 					<td><b>Severity</b></td>
-					<td>Low</td>
+					<td class="yellow center-wide">Low</td>
 				</tr>
 				<tr>
 					<td><b>Mitigation</b></td>
-					<td>Minimal</td>
+					<td class="blue center-wide">Minimal</td>
 				</tr>
 			</table>
 		</p>
@@ -559,22 +559,22 @@
 		<hr>
 		<p>
 			<span><b>Finding 11:</b> Click on The "Metamask" button is not opened Metamask wallet on mobile devices.</span>
-			<table>
+			<table class="colorized">
 				<tr>
 					<td><b>Root Cause</b></td>
-					<td>Configuration Management</td>
+					<td class="green center-wide">Configuration Management</td>
 				</tr>
 				<tr>
 					<td><b>CVSS</b></td>
-					<td>1.0</td>
+					<td class="blue center-wide">1.0</td>
 				</tr>
 				<tr>
 					<td><b>Severity</b></td>
-					<td>Medium</td>
+					<td class="beige center-wide">Medium</td>
 				</tr>
 				<tr>
 					<td><b>Mitigation</b></td>
-					<td>Low</td>
+					<td class="yellow center-wide">Low</td>
 				</tr>
 			</table>
 		</p>
@@ -588,22 +588,22 @@
 		<hr>
 		<p>
 			<span><b>Finding 12:</b> The wallet is not changed after clicking the "WalletConnect" button if the user chooses another mobile wallet by WalletConnect.</span>
-			<table>
+			<table class="colorized">
 				<tr>
 					<td><b>Root Cause</b></td>
-					<td>Configuration Management</td>
+					<td class="green center-wide">Configuration Management</td>
 				</tr>
 				<tr>
 					<td><b>CVSS</b></td>
-					<td>1.0</td>
+					<td class="blue center-wide">1.0</td>
 				</tr>
 				<tr>
 					<td><b>Severity</b></td>
-					<td>High</td>
+					<td class="red center-wide">High</td>
 				</tr>
 				<tr>
 					<td><b>Mitigation</b></td>
-					<td>Moderate</td>
+					<td class="beige center-wide">Moderate</td>
 				</tr>
 			</table>
 		</p>
@@ -617,22 +617,22 @@
 		<hr>
 		<p>
 			<span><b>Finding 13:</b> The message about changing the network to Cronos is not displayed on the user wallet if the network in the user wallet does not correspond to the "Cronos" network.</span>
-			<table>
+			<table class="colorized">
 				<tr>
 					<td><b>Root Cause</b></td>
-					<td>Configuration Management</td>
+					<td class="green center-wide">Configuration Management</td>
 				</tr>
 				<tr>
 					<td><b>CVSS</b></td>
-					<td>1.0</td>
+					<td class="blue center-wide">1.0</td>
 				</tr>
 				<tr>
 					<td><b>Severity</b></td>
-					<td>High</td>
+					<td class="red center-wide">High</td>
 				</tr>
 				<tr>
 					<td><b>Mitigation</b></td>
-					<td>Moderate</td>
+					<td class="beige center-wide">Moderate</td>
 				</tr>
 			</table>
 		</p>
@@ -646,22 +646,22 @@
 		<hr>
 		<p>
 			<span><b>Finding 14:</b> The user can't disconnect the wallet after connecting with WalletConnect.</span>
-			<table>
+			<table class="colorized">
 				<tr>
 					<td><b>Root Cause</b></td>
-					<td>Configuration Management</td>
+					<td class="green center-wide">Configuration Management</td>
 				</tr>
 				<tr>
 					<td><b>CVSS</b></td>
-					<td>1.0</td>
+					<td class="blue center-wide">1.0</td>
 				</tr>
 				<tr>
 					<td><b>Severity</b></td>
-					<td>Medium</td>
+					<td class="beige center-wide">Medium</td>
 				</tr>
 				<tr>
 					<td><b>Mitigation</b></td>
-					<td>Moderate</td>
+					<td class="beige center-wide">Moderate</td>
 				</tr>
 			</table>
 		</p>
@@ -675,22 +675,22 @@
 		<hr>
 		<p>
 			<span><b>Finding 15:</b> The "Deposit" button is not blocked if the user deposited an amount more than in wallet on the add liquidity page.</span>
-			<table>
+			<table class="colorized">
 				<tr>
 					<td><b>Root Cause</b></td>
-					<td>Configuration Management</td>
+					<td class="green center-wide">Configuration Management</td>
 				</tr>
 				<tr>
 					<td><b>CVSS</b></td>
-					<td>1.0</td>
+					<td class="blue center-wide">1.0</td>
 				</tr>
 				<tr>
 					<td><b>Severity</b></td>
-					<td>Medium</td>
+					<td class="beige center-wide">Medium</td>
 				</tr>
 				<tr>
 					<td><b>Mitigation</b></td>
-					<td>Moderate</td>
+					<td class="beige center-wide">Moderate</td>
 				</tr>
 			</table>
 		</p>
@@ -889,25 +889,25 @@
 		<p>Heimdallr provides an overall security posture rating based upon certain criteria observed throughout all aspects of a specific engagement. The following definitions provide clarity associated with the overall rating applied during this engagement.</p>
 		<p>
 			<span><b>Security Level</b></span>
-			<table>
+			<table class="colorized">
 				<thead>
 					<tr>
 						<td>Rating</td>
-						<td>Description</td>
+						<td class="justify">Description</td>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
-						<td>Above Average</td>
-						<td>In order to achieve an "Above Average" rating, the assessed organization must have demonstrated that organizational information assets and resources, and confidential client/customer data have been effectively secured from unauthorized access. Effectively, this means that systems are adequately secured using; technology, policy and procedures, and security awareness of all personnel responsible with safeguarding confidential information based on the organization's secure data handling policies. This rating is only applied when an organization has demonstrated no readily available vulnerabilities that can lead to system compromise, network compromise, and/or the unauthorized acquisition of restricted/confidential data.</td>
+						<td><b>Above Average</b></td>
+						<td class="justify">In order to achieve an "Above Average" rating, the assessed organization must have demonstrated that organizational information assets and resources, and confidential client/customer data have been effectively secured from unauthorized access. Effectively, this means that systems are adequately secured using; technology, policy and procedures, and security awareness of all personnel responsible with safeguarding confidential information based on the organization's secure data handling policies. This rating is only applied when an organization has demonstrated no readily available vulnerabilities that can lead to system compromise, network compromise, and/or the unauthorized acquisition of restricted/confidential data.</td>
 					</tr>
 					<tr>
-						<td>Average</td>
-						<td>The "Average" rating is applied when the assessed organization has demonstrated that secure access controls, policies and procedures, and security awareness are effectively safeguarding certain aspects of the organization. Furthermore, by providing this specific rating, it becomes apparent that additional secure access controls need to be implemented in order to enhance any ineffective root cause categories observed throughout the assessment. In addition, the organization has demonstrated one or more assessed areas have led to system compromise, network compromise, and/or the unauthorized acquisition of restricted/confidential data.</td>
+						<td class="grey"><b>Average</b></td>
+						<td class="grey justify">The "Average" rating is applied when the assessed organization has demonstrated that secure access controls, policies and procedures, and security awareness are effectively safeguarding certain aspects of the organization. Furthermore, by providing this specific rating, it becomes apparent that additional secure access controls need to be implemented in order to enhance any ineffective root cause categories observed throughout the assessment. In addition, the organization has demonstrated one or more assessed areas have led to system compromise, network compromise, and/or the unauthorized acquisition of restricted/confidential data.</td>
 					</tr>
 					<tr>
-						<td>Below Average</td>
-						<td>Finally, the "Below Average" is reserved for organizations that have numerous "High" severity issues that lead to the imminent compromise of systems, networks and unauthorized acquisition of restricted/confidential data. Issues such as compromised web applications, network elements and eliciting confidential information from employees often account for this particular rating. In addition, other factors influence this rating, such as the effectiveness of technical and logical detection and prevention measures. Specifically, an organization that is completely compromised while an intended surreptitious attack remains undetected is not operating in an overall secure capacity.</td>
+						<td><b>Below Average</b></td>
+						<td class="justify">Finally, the "Below Average" is reserved for organizations that have numerous "High" severity issues that lead to the imminent compromise of systems, networks and unauthorized acquisition of restricted/confidential data. Issues such as compromised web applications, network elements and eliciting confidential information from employees often account for this particular rating. In addition, other factors influence this rating, such as the effectiveness of technical and logical detection and prevention measures. Specifically, an organization that is completely compromised while an intended surreptitious attack remains undetected is not operating in an overall secure capacity.</td>
 					</tr>
 				</tbody>
 			</table>
@@ -917,34 +917,34 @@
 		<p>Heimdallr collates and assembles its findings into a series of tables. Each of the vulnerabilities is evaluated based on its severity level and the level of effort required in remediating each of the vulnerabilities.</p>
 		<p>
 			<span><b>Severity Level</b></span>
-			<table>
+			<table class="colorized">
 				<thead>
 					<tr>
-						<td>Icon</td>
-						<td>Rating</td>
-						<td>Description</td>
+						<td class="center">Icon</td>
+						<td class="center">Rating</td>
+						<td class="justify">Description</td>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
-						<td>I</td>
-						<td>Info</td>
-						<td>No impact; monetary or otherwise</td>
+						<td class=" green center"><b>I</b></td>
+						<td class="center"><b>Info</b></td>
+						<td class="justify">No impact; monetary or otherwise</td>
 					</tr>
 					<tr>
-						<td>L</td>
-						<td>Low</td>
-						<td>Limited impact; confined to a set of resources (CVSS Rating: 1 – 3)</td>
+						<td class="blue center"><b>L</b></td>
+						<td class="center"><b>Low</b></td>
+						<td class="justify">Limited impact; confined to a set of resources (CVSS Rating: 1 – 3)</td>
 					</tr>
 					<tr>
-						<td>M</td>
-						<td>Medium</td>
-						<td>Tangible impact; potential damage to data and resources (CVSS Rating: 4 – 6)</td>
+						<td class="beige center"><b>M</b></td>
+						<td class="center"><b>Medium</b></td>
+						<td class="justify">Tangible impact; potential damage to data and resources (CVSS Rating: 4 – 6)</td>
 					</tr>
 					<tr>
-						<td>H</td>
-						<td>High</td>
-						<td>Severe impact; probable damage to data and resources (CVSS Rating: 7 – 10)</td>
+						<td class="orange center"><b>H</b></td>
+						<td class="center"><b>High</b></td>
+						<td class="justify">Severe impact; probable damage to data and resources (CVSS Rating: 7 – 10)</td>
 					</tr>
 				</tbody>
 			</table>
@@ -952,29 +952,29 @@
 		<p>Ratings are based on information gathered during the engagement and depend upon the level of access to the host. </p>
 		<p>
 			<span><b>Mitigation Effort</b></span>
-			<table>
+			<table class="colorized">
 				<thead>
 					<tr>
-						<td>Rating</td>
+						<td class="center">Rating</td>
 						<td>Description</td>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
-						<td>Minimal</td>
-						<td>Requires nominal amount of time and resources.</td>
+						<td class="blue center"><b>Minimal</b></td>
+						<td class="justify">Requires nominal amount of time and resources.</td>
 					</tr>
 					<tr>
-						<td>Low</td>
-						<td>Requires a small amount of time and effort to mitigate, typically measured in a story point unit, i.e. 4 hours.</td>
+						<td class="yellow center"><b>Low</b></td>
+						<td class="justify">Requires a small amount of time and effort to mitigate, typically measured in a story point unit, i.e. 4 hours.</td>
 					</tr>
 					<tr>
-						<td>Moderate</td>
-						<td>Requires a reasonable amount of time and resources; may also include the reinstallation of host, minor changes to the network infrastructure, and/or significant changes to a component of the network infrastructure.</td>
+						<td class="beige center"><b>Moderate</b></td>
+						<td class="justify">Requires a reasonable amount of time and resources; may also include the reinstallation of host, minor changes to the network infrastructure, and/or significant changes to a component of the network infrastructure.</td>
 					</tr>
 					<tr>
-						<td>Costly</td>
-						<td>Requires a significant amount of time and resources; may require the reinstallation of multiple hosts, major changes to the network infrastructure, and/or significant changes to the network; may also be cost prohibitive to correct.</td>
+						<td class="orange center"><b>Costly</b></td>
+						<td class="justify">Requires a significant amount of time and resources; may require the reinstallation of multiple hosts, major changes to the network infrastructure, and/or significant changes to the network; may also be cost prohibitive to correct.</td>
 					</tr>
 				</tbody>
 			</table>
