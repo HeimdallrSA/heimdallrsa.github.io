@@ -18,18 +18,23 @@ body {
 	color: #fff;
 }
 
-body::-webkit-scrollbar {
+body::-webkit-scrollbar,
+.article-w pre code::-webkit-scrollbar {
 	width: 8px;
 	height: 8px;
 	border-radius: 4px;
 }
 
-body::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track,
+.article-w pre code::-webkit-scrollbar-track,
+body::-webkit-scrollbar-corner,
+.article-w pre code::-webkit-scrollbar-corner {
 	background: #050811;
 	transition: background 1s ease-in-out;
 }
 
-body::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb,
+.article-w pre code::-webkit-scrollbar-thumb {
 	background: #173745;
 	border-radius: 4px;
 	transition: background 1s ease-in-out;
@@ -207,6 +212,67 @@ a.networks-item:last-child {
 .article-w a:hover {
 	text-decoration: underline;
 }
+
+.article-w code {
+    word-break: break-all;
+}
+
+.article-w pre code {
+	display: block;
+    max-height: 400px;
+    padding: 16px;
+    overflow: auto;
+    direction: ltr;
+    unicode-bidi: bidi-override;
+    font-size: 12px;
+    color: inherit;
+    word-break: normal;
+    line-height: 1.9;
+    letter-spacing: 0;
+    color: rgba(255,255,255,.75);
+    background: rgba(0,0,0,.4);
+    box-sizing: border-box;
+}
+
+.article-w a.download-link {
+	display: inline-flex;
+	align-items: center;
+	/*justify-content: space-between;*/
+	padding: 12px 16px;
+	margin: 16px 0 32px;
+	border: 1px solid #00C78F;
+	color: #00C78F;
+	border-radius: 3px;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: all .3s ease-in-out;
+}
+
+.article-w a.download-link:hover {
+	border: 1px solid #fff;
+	color: #fff;
+}
+
+.article-w a.download-link img {
+	height: 12px;
+	width: 12px;
+	margin-right: 8px;
+	transform: rotate(-225deg);
+}
+
+.article-w time {
+	font-style: italic;
+}
+
+.article-w hr {
+	height: 1px;
+	width: 61%;
+	margin-left: 0;
+	background: rgba(255,255,255,.4);
+	border: 0 !important;
+}
+
+
 
 .contact-w {
 	margin-bottom: 100px;
