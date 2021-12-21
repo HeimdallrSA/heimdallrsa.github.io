@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="55"
+   height="61"
+   viewBox="0 0 14.552083 16.139584"
+   version="1.1"
+   id="svg1892"
+   sodipodi:docname="polygon.svg"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+  <defs
+     id="defs1886">
+    <linearGradient
+       id="paint11_linear_692_2854"
+       x1="325.5"
+       y1="390.5"
+       x2="350.297"
+       y2="423.71301"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(5.1539121,-5.8261615)">
+      <stop
+         stop-color="white"
+         id="stop263" />
+      <stop
+         offset="1"
+         stop-color="#D0FFF2"
+         id="stop265" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="-813.57143"
+     inkscape:cy="-216.14286"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="1031"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata1889">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-85.706101,-138.49568)">
+    <g
+       transform="matrix(0.26458333,0,0,0.26458333,2.5862136,41.612191)"
+       id="g2480">
+      <path
+         d="m 314.15391,368.90584 8.696,-1.316 c 12.474,-1.888 25.134,-1.888 37.608,0 l 8.696,1.316 -0.974,30.453 c -0.248,7.782 -4.323,14.845 -10.718,18.581 l -15.808,9.234 -15.808,-9.234 c -6.395,-3.736 -10.47,-10.799 -10.718,-18.581 z"
+         id="path58"
+         style="fill:url(#paint11_linear_692_2854)"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 334.85691,391.88084 6.797,-6.797 6.8,6.8 3.955,-3.955 -10.755,-10.755 -10.752,10.752 z m -10.703,2.793 3.955,-3.956 3.955,3.955 -3.955,3.955 z m 10.703,2.793 6.797,6.797 6.8,-6.8 3.957,3.953 -0.002,0.002 -10.755,10.755 -10.752,-10.752 -0.006,-0.006 z m 16.387,-2.791 3.955,-3.955 3.955,3.954 -3.955,3.956 z"
+         id="path60"
+         inkscape:connector-curvature="0"
+         style="fill:#f3ba2f" />
+    </g>
+  </g>
+</svg>
